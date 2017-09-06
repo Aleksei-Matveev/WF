@@ -58,13 +58,13 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.HotDog = new System.Windows.Forms.TextBox();
+            this.Espresso = new System.Windows.Forms.TextBox();
+            this.Americano = new System.Windows.Forms.TextBox();
+            this.Sprite = new System.Windows.Forms.TextBox();
+            this.Cola = new System.Windows.Forms.TextBox();
+            this.Cheesburger = new System.Windows.Forms.TextBox();
+            this.Hamburger = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -78,19 +78,19 @@
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.Latte = new System.Windows.Forms.TextBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.All = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.payment = new System.Windows.Forms.Button();
+            this.TotalShow = new System.Windows.Forms.TextBox();
+            this.Total = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -172,6 +172,7 @@
             this.textBox20.ReadOnly = true;
             this.textBox20.Size = new System.Drawing.Size(244, 49);
             this.textBox20.TabIndex = 0;
+            this.textBox20.Text = "0";
             this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // groupBox3
@@ -374,68 +375,75 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Количество";
             // 
-            // textBox17
+            // HotDog
             // 
-            this.textBox17.Location = new System.Drawing.Point(212, 48);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.ReadOnly = true;
-            this.textBox17.Size = new System.Drawing.Size(100, 20);
-            this.textBox17.TabIndex = 10;
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.HotDog.Location = new System.Drawing.Point(212, 48);
+            this.HotDog.Name = "HotDog";
+            this.HotDog.ReadOnly = true;
+            this.HotDog.Size = new System.Drawing.Size(100, 20);
+            this.HotDog.TabIndex = 10;
+            this.HotDog.Text = "5000";
+            this.HotDog.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox14
+            // Espresso
             // 
-            this.textBox14.Location = new System.Drawing.Point(212, 204);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.ReadOnly = true;
-            this.textBox14.Size = new System.Drawing.Size(100, 20);
-            this.textBox14.TabIndex = 12;
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Espresso.Location = new System.Drawing.Point(212, 204);
+            this.Espresso.Name = "Espresso";
+            this.Espresso.ReadOnly = true;
+            this.Espresso.Size = new System.Drawing.Size(100, 20);
+            this.Espresso.TabIndex = 12;
+            this.Espresso.Text = "3365";
+            this.Espresso.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox13
+            // Americano
             // 
-            this.textBox13.Location = new System.Drawing.Point(212, 178);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.ReadOnly = true;
-            this.textBox13.Size = new System.Drawing.Size(100, 20);
-            this.textBox13.TabIndex = 13;
-            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Americano.Location = new System.Drawing.Point(212, 178);
+            this.Americano.Name = "Americano";
+            this.Americano.ReadOnly = true;
+            this.Americano.Size = new System.Drawing.Size(100, 20);
+            this.Americano.TabIndex = 13;
+            this.Americano.Text = "2365";
+            this.Americano.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox12
+            // Sprite
             // 
-            this.textBox12.Location = new System.Drawing.Point(212, 152);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.ReadOnly = true;
-            this.textBox12.Size = new System.Drawing.Size(100, 20);
-            this.textBox12.TabIndex = 14;
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Sprite.Location = new System.Drawing.Point(212, 152);
+            this.Sprite.Name = "Sprite";
+            this.Sprite.ReadOnly = true;
+            this.Sprite.Size = new System.Drawing.Size(100, 20);
+            this.Sprite.TabIndex = 14;
+            this.Sprite.Text = "3662";
+            this.Sprite.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox11
+            // Cola
             // 
-            this.textBox11.Location = new System.Drawing.Point(212, 126);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(100, 20);
-            this.textBox11.TabIndex = 15;
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Cola.Location = new System.Drawing.Point(212, 126);
+            this.Cola.Name = "Cola";
+            this.Cola.ReadOnly = true;
+            this.Cola.Size = new System.Drawing.Size(100, 20);
+            this.Cola.TabIndex = 15;
+            this.Cola.Text = "1985";
+            this.Cola.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox10
+            // Cheesburger
             // 
-            this.textBox10.Location = new System.Drawing.Point(212, 100);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 16;
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Cheesburger.Location = new System.Drawing.Point(212, 100);
+            this.Cheesburger.Name = "Cheesburger";
+            this.Cheesburger.ReadOnly = true;
+            this.Cheesburger.Size = new System.Drawing.Size(100, 20);
+            this.Cheesburger.TabIndex = 16;
+            this.Cheesburger.Text = "2650";
+            this.Cheesburger.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox9
+            // Hamburger
             // 
-            this.textBox9.Location = new System.Drawing.Point(212, 74);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 17;
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Hamburger.Location = new System.Drawing.Point(212, 74);
+            this.Hamburger.Name = "Hamburger";
+            this.Hamburger.ReadOnly = true;
+            this.Hamburger.Size = new System.Drawing.Size(100, 20);
+            this.Hamburger.TabIndex = 17;
+            this.Hamburger.Text = "3000";
+            this.Hamburger.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // checkBox1
             // 
@@ -447,8 +455,10 @@
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(71, 17);
             this.checkBox1.TabIndex = 26;
+            this.checkBox1.Tag = "HotDog";
             this.checkBox1.Text = "Хот-дог";
             this.checkBox1.UseVisualStyleBackColor = false;
+            this.checkBox1.Click += new System.EventHandler(this.checkBox2_Click);
             // 
             // label3
             // 
@@ -556,8 +566,10 @@
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(89, 17);
             this.checkBox2.TabIndex = 42;
+            this.checkBox2.Tag = "Hamburger";
             this.checkBox2.Text = "Гамбургер";
             this.checkBox2.UseVisualStyleBackColor = false;
+            this.checkBox2.Click += new System.EventHandler(this.checkBox2_Click);
             // 
             // checkBox3
             // 
@@ -569,8 +581,10 @@
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(89, 17);
             this.checkBox3.TabIndex = 43;
+            this.checkBox3.Tag = "Cheesburger";
             this.checkBox3.Text = "Чизбургер";
             this.checkBox3.UseVisualStyleBackColor = false;
+            this.checkBox3.Click += new System.EventHandler(this.checkBox2_Click);
             // 
             // checkBox4
             // 
@@ -580,10 +594,12 @@
             this.checkBox4.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.checkBox4.Location = new System.Drawing.Point(30, 128);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(87, 17);
+            this.checkBox4.Size = new System.Drawing.Size(84, 17);
             this.checkBox4.TabIndex = 44;
-            this.checkBox4.Text = "Кока-кола";
+            this.checkBox4.Tag = "Cola";
+            this.checkBox4.Text = "Coca-Cola";
             this.checkBox4.UseVisualStyleBackColor = false;
+            this.checkBox4.Click += new System.EventHandler(this.checkBox2_Click);
             // 
             // checkBox5
             // 
@@ -595,17 +611,21 @@
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(68, 17);
             this.checkBox5.TabIndex = 45;
+            this.checkBox5.Tag = "Sprite";
             this.checkBox5.Text = "Спрайт";
             this.checkBox5.UseVisualStyleBackColor = false;
+            this.checkBox5.Click += new System.EventHandler(this.checkBox2_Click);
             // 
-            // textBox15
+            // Latte
             // 
-            this.textBox15.Location = new System.Drawing.Point(212, 229);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.ReadOnly = true;
-            this.textBox15.Size = new System.Drawing.Size(100, 20);
-            this.textBox15.TabIndex = 11;
-            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Latte.Location = new System.Drawing.Point(212, 229);
+            this.Latte.Name = "Latte";
+            this.Latte.ReadOnly = true;
+            this.Latte.Size = new System.Drawing.Size(100, 20);
+            this.Latte.TabIndex = 11;
+            this.Latte.Tag = "c_latte";
+            this.Latte.Text = "5646";
+            this.Latte.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // checkBox6
             // 
@@ -617,8 +637,10 @@
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(127, 17);
             this.checkBox6.TabIndex = 46;
+            this.checkBox6.Tag = "Americano";
             this.checkBox6.Text = "Кофе Американо";
             this.checkBox6.UseVisualStyleBackColor = false;
+            this.checkBox6.Click += new System.EventHandler(this.checkBox2_Click);
             // 
             // checkBox7
             // 
@@ -630,8 +652,10 @@
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(118, 17);
             this.checkBox7.TabIndex = 47;
+            this.checkBox7.Tag = "Espresso";
             this.checkBox7.Text = "Кофе Эспрессо";
             this.checkBox7.UseVisualStyleBackColor = false;
+            this.checkBox7.Click += new System.EventHandler(this.checkBox2_Click);
             // 
             // checkBox8
             // 
@@ -643,12 +667,14 @@
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(96, 17);
             this.checkBox8.TabIndex = 48;
+            this.checkBox8.Tag = "Latte";
             this.checkBox8.Text = "Кофе Латте";
             this.checkBox8.UseVisualStyleBackColor = false;
+            this.checkBox8.Click += new System.EventHandler(this.checkBox2_Click);
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.textBox21);
+            this.groupBox5.Controls.Add(this.All);
             this.groupBox5.ForeColor = System.Drawing.Color.Maroon;
             this.groupBox5.Location = new System.Drawing.Point(212, 273);
             this.groupBox5.Name = "groupBox5";
@@ -656,6 +682,18 @@
             this.groupBox5.TabIndex = 49;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "К оплате";
+            // 
+            // All
+            // 
+            this.All.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.All.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.All.Location = new System.Drawing.Point(3, 16);
+            this.All.Name = "All";
+            this.All.ReadOnly = true;
+            this.All.Size = new System.Drawing.Size(237, 49);
+            this.All.TabIndex = 0;
+            this.All.Text = "0";
+            this.All.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // groupBox2
             // 
@@ -665,7 +703,7 @@
             this.groupBox2.Controls.Add(this.checkBox8);
             this.groupBox2.Controls.Add(this.checkBox7);
             this.groupBox2.Controls.Add(this.checkBox6);
-            this.groupBox2.Controls.Add(this.textBox15);
+            this.groupBox2.Controls.Add(this.Latte);
             this.groupBox2.Controls.Add(this.checkBox5);
             this.groupBox2.Controls.Add(this.checkBox4);
             this.groupBox2.Controls.Add(this.checkBox3);
@@ -679,13 +717,13 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.checkBox1);
-            this.groupBox2.Controls.Add(this.textBox9);
-            this.groupBox2.Controls.Add(this.textBox10);
-            this.groupBox2.Controls.Add(this.textBox11);
-            this.groupBox2.Controls.Add(this.textBox12);
-            this.groupBox2.Controls.Add(this.textBox13);
-            this.groupBox2.Controls.Add(this.textBox14);
-            this.groupBox2.Controls.Add(this.textBox17);
+            this.groupBox2.Controls.Add(this.Hamburger);
+            this.groupBox2.Controls.Add(this.Cheesburger);
+            this.groupBox2.Controls.Add(this.Cola);
+            this.groupBox2.Controls.Add(this.Sprite);
+            this.groupBox2.Controls.Add(this.Americano);
+            this.groupBox2.Controls.Add(this.Espresso);
+            this.groupBox2.Controls.Add(this.HotDog);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.textBox8);
@@ -708,7 +746,9 @@
             // 
             this.groupBox6.Controls.Add(this.pictureBox1);
             this.groupBox6.Location = new System.Drawing.Point(17, 269);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(0);
             this.groupBox6.Size = new System.Drawing.Size(183, 72);
             this.groupBox6.TabIndex = 50;
             this.groupBox6.TabStop = false;
@@ -719,29 +759,18 @@
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 16);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 13);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(177, 53);
+            this.pictureBox1.Size = new System.Drawing.Size(183, 59);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // textBox21
-            // 
-            this.textBox21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox21.Location = new System.Drawing.Point(3, 16);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.ReadOnly = true;
-            this.textBox21.Size = new System.Drawing.Size(237, 49);
-            this.textBox21.TabIndex = 0;
-            this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // groupBox7
             // 
             this.groupBox7.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox7.Controls.Add(this.button2);
-            this.groupBox7.Controls.Add(this.textBox22);
-            this.groupBox7.Controls.Add(this.button1);
+            this.groupBox7.Controls.Add(this.payment);
+            this.groupBox7.Controls.Add(this.TotalShow);
+            this.groupBox7.Controls.Add(this.Total);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox7.ForeColor = System.Drawing.Color.Maroon;
             this.groupBox7.Location = new System.Drawing.Point(8, 398);
@@ -751,36 +780,41 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Оплата";
             // 
-            // button1
+            // payment
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(22, 26);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(152, 62);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Итого";
-            this.button1.UseVisualStyleBackColor = true;
+            this.payment.Enabled = false;
+            this.payment.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.payment.Location = new System.Drawing.Point(454, 26);
+            this.payment.Name = "payment";
+            this.payment.Size = new System.Drawing.Size(285, 62);
+            this.payment.TabIndex = 2;
+            this.payment.Tag = "Payment";
+            this.payment.Text = "ОПЛАТА";
+            this.payment.UseVisualStyleBackColor = true;
+            this.payment.Click += new System.EventHandler(this.Total_Click);
             // 
-            // textBox22
+            // TotalShow
             // 
-            this.textBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox22.Location = new System.Drawing.Point(207, 26);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.ReadOnly = true;
-            this.textBox22.Size = new System.Drawing.Size(206, 62);
-            this.textBox22.TabIndex = 1;
-            this.textBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TotalShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TotalShow.Location = new System.Drawing.Point(207, 26);
+            this.TotalShow.Name = "TotalShow";
+            this.TotalShow.ReadOnly = true;
+            this.TotalShow.Size = new System.Drawing.Size(206, 62);
+            this.TotalShow.TabIndex = 1;
+            this.TotalShow.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // button2
+            // Total
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(454, 26);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(285, 62);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "ОПЛАТА";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Total.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.Total.Location = new System.Drawing.Point(22, 26);
+            this.Total.Name = "Total";
+            this.Total.Size = new System.Drawing.Size(152, 62);
+            this.Total.TabIndex = 0;
+            this.Total.Tag = "Total";
+            this.Total.Text = "Итого";
+            this.Total.UseVisualStyleBackColor = true;
+            this.Total.Click += new System.EventHandler(this.Total_Click);
             // 
             // FormAutoShop
             // 
@@ -847,13 +881,13 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox HotDog;
+        private System.Windows.Forms.TextBox Espresso;
+        private System.Windows.Forms.TextBox Americano;
+        private System.Windows.Forms.TextBox Sprite;
+        private System.Windows.Forms.TextBox Cola;
+        private System.Windows.Forms.TextBox Cheesburger;
+        private System.Windows.Forms.TextBox Hamburger;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -867,7 +901,7 @@
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox Latte;
         private System.Windows.Forms.CheckBox checkBox6;
         private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.CheckBox checkBox8;
@@ -876,11 +910,11 @@
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox All;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button payment;
+        private System.Windows.Forms.TextBox TotalShow;
+        private System.Windows.Forms.Button Total;
     }
 }
 
