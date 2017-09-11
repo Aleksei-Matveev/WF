@@ -55,9 +55,14 @@
     <Compile Include="FormAutoShop.Designer.cs">
       <DependentUpon>FormAutoShop.cs</DependentUpon>
     </Compile>
+    <Compile Include="FuelInfo.cs" />
+    <Compile Include="FuelRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAutoShop.resx">
+      <DependentUpon>FormAutoShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAutoShop.ru.resx">
       <DependentUpon>FormAutoShop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

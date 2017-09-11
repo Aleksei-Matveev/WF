@@ -2,7 +2,8 @@
 using System.Text;
 using System.Windows.Forms;
 
-namespace Guess_the_number
+namespace Lab_01
+
 {
     class Game
     {
@@ -13,7 +14,9 @@ namespace Guess_the_number
             MessageBox.Show("Вариантов больше нет","СТОП!!",MessageBoxButtons.OK,MessageBoxIcon.Stop);
             MessageBox.Show(message.ToString(), "Загаданное число!!",MessageBoxButtons.OK,MessageBoxIcon.Information);
             Environment.Exit(0);
+            
         }
+        
 
         private void guess(int min, int max)
         {
@@ -48,6 +51,7 @@ namespace Guess_the_number
         public void Run()
         {
             guess(1,2000);
+           
         }
     }
 }

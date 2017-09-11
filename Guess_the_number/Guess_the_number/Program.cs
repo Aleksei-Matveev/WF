@@ -4,14 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Guess_the_number
+namespace Lab_01
+
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Game game = new Game();
-            game.Run();
+            Resume resume = new Resume();
+            resume.Run();
+            //Window window = new Window();
+            //window.Run();
+            //Game game = new Game();
+            //game.Run();
         }
+            
     }
 }
