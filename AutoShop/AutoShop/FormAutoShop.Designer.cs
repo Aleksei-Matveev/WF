@@ -39,10 +39,10 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.tbTotalFuel = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.tbMoney = new System.Windows.Forms.TextBox();
+            this.tbSumFuel = new System.Windows.Forms.TextBox();
             this.tbLitr = new System.Windows.Forms.TextBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rbSumFuel = new System.Windows.Forms.RadioButton();
+            this.rbLitrFuel = new System.Windows.Forms.RadioButton();
             this.tbPriceFuel = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.cbFuels = new System.Windows.Forms.ComboBox();
@@ -91,7 +91,7 @@
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.payment = new System.Windows.Forms.Button();
             this.TotalShow = new System.Windows.Forms.TextBox();
-            this.Total = new System.Windows.Forms.Button();
+            this.btTotal = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -123,7 +123,7 @@
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
             resources.ApplyResources(this.выходToolStripMenuItem, "выходToolStripMenuItem");
-            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
+            this.выходToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // справкаToolStripMenuItem
             // 
@@ -136,7 +136,7 @@
             // 
             this.авторToolStripMenuItem.Name = "авторToolStripMenuItem";
             resources.ApplyResources(this.авторToolStripMenuItem, "авторToolStripMenuItem");
-            this.авторToolStripMenuItem.Click += new System.EventHandler(this.авторToolStripMenuItem_Click);
+            this.авторToolStripMenuItem.Click += new System.EventHandler(this.authorToolStripMenuItem_Click);
             // 
             // groupBox1
             // 
@@ -164,44 +164,52 @@
             resources.ApplyResources(this.tbTotalFuel, "tbTotalFuel");
             this.tbTotalFuel.Name = "tbTotalFuel";
             this.tbTotalFuel.ReadOnly = true;
+            this.tbTotalFuel.TabStop = false;
+            this.tbTotalFuel.TextChanged += new System.EventHandler(this.tbTotalFuel_TextChanged);
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.tbMoney);
+            this.groupBox3.Controls.Add(this.tbSumFuel);
             this.groupBox3.Controls.Add(this.tbLitr);
-            this.groupBox3.Controls.Add(this.radioButton2);
-            this.groupBox3.Controls.Add(this.radioButton1);
+            this.groupBox3.Controls.Add(this.rbSumFuel);
+            this.groupBox3.Controls.Add(this.rbLitrFuel);
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
-            // tbMoney
+            // tbSumFuel
             // 
-            resources.ApplyResources(this.tbMoney, "tbMoney");
-            this.tbMoney.Name = "tbMoney";
-            this.tbMoney.ReadOnly = true;
+            resources.ApplyResources(this.tbSumFuel, "tbSumFuel");
+            this.tbSumFuel.Name = "tbSumFuel";
+            this.tbSumFuel.ReadOnly = true;
+            this.tbSumFuel.Tag = "SumFuel";
+            this.tbSumFuel.TextChanged += new System.EventHandler(this.tbFuel_TextChanged);
             // 
             // tbLitr
             // 
             resources.ApplyResources(this.tbLitr, "tbLitr");
             this.tbLitr.Name = "tbLitr";
-            this.tbLitr.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox18_KeyUp);
+            this.tbLitr.Tag = "LitrFuel";
+            this.tbLitr.TextChanged += new System.EventHandler(this.tbFuel_TextChanged);
             // 
-            // radioButton2
+            // rbSumFuel
             // 
-            resources.ApplyResources(this.radioButton2, "radioButton2");
-            this.radioButton2.ForeColor = System.Drawing.Color.Maroon;
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.rbSumFuel, "rbSumFuel");
+            this.rbSumFuel.ForeColor = System.Drawing.Color.Maroon;
+            this.rbSumFuel.Name = "rbSumFuel";
+            this.rbSumFuel.TabStop = true;
+            this.rbSumFuel.UseVisualStyleBackColor = true;
+            this.rbSumFuel.Click += new System.EventHandler(this.rbSumFuel_Click);
             // 
-            // radioButton1
+            // rbLitrFuel
             // 
-            resources.ApplyResources(this.radioButton1, "radioButton1");
-            this.radioButton1.Checked = true;
-            this.radioButton1.ForeColor = System.Drawing.Color.Maroon;
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.TabStop = true;
-            this.radioButton1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.rbLitrFuel, "rbLitrFuel");
+            this.rbLitrFuel.Checked = true;
+            this.rbLitrFuel.ForeColor = System.Drawing.Color.Maroon;
+            this.rbLitrFuel.Name = "rbLitrFuel";
+            this.rbLitrFuel.TabStop = true;
+            this.rbLitrFuel.UseVisualStyleBackColor = true;
+            this.rbLitrFuel.Click += new System.EventHandler(this.rbSumFuel_Click);
             // 
             // tbPriceFuel
             // 
@@ -323,6 +331,7 @@
             resources.ApplyResources(this.tbHotDogPrice, "tbHotDogPrice");
             this.tbHotDogPrice.Name = "tbHotDogPrice";
             this.tbHotDogPrice.ReadOnly = true;
+            this.tbHotDogPrice.TabStop = false;
             this.tbHotDogPrice.Tag = "1";
             // 
             // tbEspressoPrice
@@ -330,6 +339,7 @@
             resources.ApplyResources(this.tbEspressoPrice, "tbEspressoPrice");
             this.tbEspressoPrice.Name = "tbEspressoPrice";
             this.tbEspressoPrice.ReadOnly = true;
+            this.tbEspressoPrice.TabStop = false;
             this.tbEspressoPrice.Tag = "7";
             // 
             // tbAmericanoPrice
@@ -337,6 +347,7 @@
             resources.ApplyResources(this.tbAmericanoPrice, "tbAmericanoPrice");
             this.tbAmericanoPrice.Name = "tbAmericanoPrice";
             this.tbAmericanoPrice.ReadOnly = true;
+            this.tbAmericanoPrice.TabStop = false;
             this.tbAmericanoPrice.Tag = "6";
             // 
             // tbSpritePrice
@@ -344,6 +355,7 @@
             resources.ApplyResources(this.tbSpritePrice, "tbSpritePrice");
             this.tbSpritePrice.Name = "tbSpritePrice";
             this.tbSpritePrice.ReadOnly = true;
+            this.tbSpritePrice.TabStop = false;
             this.tbSpritePrice.Tag = "5";
             // 
             // tbColaPrice
@@ -351,6 +363,7 @@
             resources.ApplyResources(this.tbColaPrice, "tbColaPrice");
             this.tbColaPrice.Name = "tbColaPrice";
             this.tbColaPrice.ReadOnly = true;
+            this.tbColaPrice.TabStop = false;
             this.tbColaPrice.Tag = "4";
             // 
             // tbCheesburgerPrice
@@ -358,6 +371,7 @@
             resources.ApplyResources(this.tbCheesburgerPrice, "tbCheesburgerPrice");
             this.tbCheesburgerPrice.Name = "tbCheesburgerPrice";
             this.tbCheesburgerPrice.ReadOnly = true;
+            this.tbCheesburgerPrice.TabStop = false;
             this.tbCheesburgerPrice.Tag = "3";
             // 
             // tbHamburgerPrice
@@ -365,6 +379,7 @@
             resources.ApplyResources(this.tbHamburgerPrice, "tbHamburgerPrice");
             this.tbHamburgerPrice.Name = "tbHamburgerPrice";
             this.tbHamburgerPrice.ReadOnly = true;
+            this.tbHamburgerPrice.TabStop = false;
             this.tbHamburgerPrice.Tag = "2";
             // 
             // chbHotDog
@@ -375,7 +390,7 @@
             this.chbHotDog.Name = "chbHotDog";
             this.chbHotDog.Tag = "HotDog";
             this.chbHotDog.UseVisualStyleBackColor = false;
-            this.chbHotDog.Click += new System.EventHandler(this.checkBox_Click);
+            this.chbHotDog.CheckedChanged += new System.EventHandler(this.checkbox_CheckedChanged);
             // 
             // label3
             // 
@@ -441,7 +456,7 @@
             this.chbHamburger.Name = "chbHamburger";
             this.chbHamburger.Tag = "Hamburger";
             this.chbHamburger.UseVisualStyleBackColor = false;
-            this.chbHamburger.Click += new System.EventHandler(this.checkBox_Click);
+            this.chbHamburger.CheckedChanged += new System.EventHandler(this.checkbox_CheckedChanged);
             // 
             // chbCheesburger
             // 
@@ -451,7 +466,7 @@
             this.chbCheesburger.Name = "chbCheesburger";
             this.chbCheesburger.Tag = "Cheesburger";
             this.chbCheesburger.UseVisualStyleBackColor = false;
-            this.chbCheesburger.Click += new System.EventHandler(this.checkBox_Click);
+            this.chbCheesburger.CheckedChanged += new System.EventHandler(this.checkbox_CheckedChanged);
             // 
             // chbCola
             // 
@@ -461,7 +476,7 @@
             this.chbCola.Name = "chbCola";
             this.chbCola.Tag = "Cola";
             this.chbCola.UseVisualStyleBackColor = false;
-            this.chbCola.Click += new System.EventHandler(this.checkBox_Click);
+            this.chbCola.CheckedChanged += new System.EventHandler(this.checkbox_CheckedChanged);
             // 
             // chbSprite
             // 
@@ -471,13 +486,14 @@
             this.chbSprite.Name = "chbSprite";
             this.chbSprite.Tag = "Sprite";
             this.chbSprite.UseVisualStyleBackColor = false;
-            this.chbSprite.Click += new System.EventHandler(this.checkBox_Click);
+            this.chbSprite.CheckedChanged += new System.EventHandler(this.checkbox_CheckedChanged);
             // 
             // tbLattePrice
             // 
             resources.ApplyResources(this.tbLattePrice, "tbLattePrice");
             this.tbLattePrice.Name = "tbLattePrice";
             this.tbLattePrice.ReadOnly = true;
+            this.tbLattePrice.TabStop = false;
             this.tbLattePrice.Tag = "8";
             // 
             // chbAmericano
@@ -488,7 +504,7 @@
             this.chbAmericano.Name = "chbAmericano";
             this.chbAmericano.Tag = "Americano";
             this.chbAmericano.UseVisualStyleBackColor = false;
-            this.chbAmericano.Click += new System.EventHandler(this.checkBox_Click);
+            this.chbAmericano.CheckedChanged += new System.EventHandler(this.checkbox_CheckedChanged);
             // 
             // chbEspresso
             // 
@@ -498,7 +514,7 @@
             this.chbEspresso.Name = "chbEspresso";
             this.chbEspresso.Tag = "Espresso";
             this.chbEspresso.UseVisualStyleBackColor = false;
-            this.chbEspresso.Click += new System.EventHandler(this.checkBox_Click);
+            this.chbEspresso.CheckedChanged += new System.EventHandler(this.checkbox_CheckedChanged);
             // 
             // chbLatte
             // 
@@ -508,7 +524,7 @@
             this.chbLatte.Name = "chbLatte";
             this.chbLatte.Tag = "Latte";
             this.chbLatte.UseVisualStyleBackColor = false;
-            this.chbLatte.Click += new System.EventHandler(this.checkBox_Click);
+            this.chbLatte.CheckedChanged += new System.EventHandler(this.checkbox_CheckedChanged);
             // 
             // groupBox5
             // 
@@ -523,6 +539,8 @@
             resources.ApplyResources(this.tbTotalShop, "tbTotalShop");
             this.tbTotalShop.Name = "tbTotalShop";
             this.tbTotalShop.ReadOnly = true;
+            this.tbTotalShop.TabStop = false;
+            this.tbTotalShop.TextChanged += new System.EventHandler(this.tbTotalFuel_TextChanged);
             // 
             // groupBox2
             // 
@@ -585,7 +603,7 @@
             this.groupBox7.BackColor = System.Drawing.Color.Transparent;
             this.groupBox7.Controls.Add(this.payment);
             this.groupBox7.Controls.Add(this.TotalShow);
-            this.groupBox7.Controls.Add(this.Total);
+            this.groupBox7.Controls.Add(this.btTotal);
             resources.ApplyResources(this.groupBox7, "groupBox7");
             this.groupBox7.ForeColor = System.Drawing.Color.Maroon;
             this.groupBox7.Name = "groupBox7";
@@ -604,15 +622,16 @@
             resources.ApplyResources(this.TotalShow, "TotalShow");
             this.TotalShow.Name = "TotalShow";
             this.TotalShow.ReadOnly = true;
+            this.TotalShow.TabStop = false;
             // 
-            // Total
+            // btTotal
             // 
-            resources.ApplyResources(this.Total, "Total");
-            this.Total.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.Total.Name = "Total";
-            this.Total.Tag = "Total";
-            this.Total.UseVisualStyleBackColor = true;
-            this.Total.Click += new System.EventHandler(this.Total_Click);
+            resources.ApplyResources(this.btTotal, "btTotal");
+            this.btTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btTotal.Name = "btTotal";
+            this.btTotal.Tag = "Total";
+            this.btTotal.UseVisualStyleBackColor = true;
+            this.btTotal.Click += new System.EventHandler(this.Total_Click);
             // 
             // FormAutoShop
             // 
@@ -659,10 +678,9 @@
         private System.Windows.Forms.ComboBox cbFuels;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox tbMoney;
-        private System.Windows.Forms.TextBox tbLitr;
+        private System.Windows.Forms.RadioButton rbSumFuel;
+        private System.Windows.Forms.RadioButton rbLitrFuel;
+        private System.Windows.Forms.TextBox tbSumFuel;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.ImageList imageList2;
@@ -709,7 +727,8 @@
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Button payment;
         private System.Windows.Forms.TextBox TotalShow;
-        private System.Windows.Forms.Button Total;
+        private System.Windows.Forms.Button btTotal;
         private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
+        private System.Windows.Forms.TextBox tbLitr;
     }
 }

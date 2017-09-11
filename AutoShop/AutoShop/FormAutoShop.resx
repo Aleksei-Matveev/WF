@@ -121,30 +121,6 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="выходToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 22</value>
-  </data>
-  <data name="выходToolStripMenuItem.Text" xml:space="preserve">
-    <value>Выход</value>
-  </data>
-  <data name="файлToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 20</value>
-  </data>
-  <data name="файлToolStripMenuItem.Text" xml:space="preserve">
-    <value>Файл</value>
-  </data>
-  <data name="авторToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 22</value>
-  </data>
-  <data name="авторToolStripMenuItem.Text" xml:space="preserve">
-    <value>Автор</value>
-  </data>
-  <data name="справкаToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 20</value>
-  </data>
-  <data name="справкаToolStripMenuItem.Text" xml:space="preserve">
-    <value>Справка</value>
-  </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -169,6 +145,30 @@
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="файлToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 20</value>
+  </data>
+  <data name="файлToolStripMenuItem.Text" xml:space="preserve">
+    <value>Файл</value>
+  </data>
+  <data name="выходToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 22</value>
+  </data>
+  <data name="выходToolStripMenuItem.Text" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="справкаToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
+  </data>
+  <data name="справкаToolStripMenuItem.Text" xml:space="preserve">
+    <value>Справка</value>
+  </data>
+  <data name="авторToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 22</value>
+  </data>
+  <data name="авторToolStripMenuItem.Text" xml:space="preserve">
+    <value>Автор</value>
   </data>
   <data name="groupBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -837,22 +837,6 @@
         S/M6Jk5lP23LF0RNP6KmF//Z
 </value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tbTotalFuel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tbTotalFuel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 27.75pt, style=Bold</value>
-  </data>
-  <data name="tbTotalFuel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 16</value>
-  </data>
-  <data name="tbTotalFuel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 49</value>
-  </data>
-  <data name="tbTotalFuel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;tbTotalFuel.Name" xml:space="preserve">
     <value>tbTotalFuel</value>
   </data>
@@ -889,41 +873,39 @@
   <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="tbMoney.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tbSumFuel.Location" type="System.Drawing.Point, System.Drawing">
     <value>120, 75</value>
   </data>
-  <data name="tbMoney.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tbSumFuel.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 20</value>
   </data>
-  <data name="tbMoney.TabIndex" type="System.Int32, mscorlib">
+  <data name="tbSumFuel.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="tbMoney.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tbSumFuel.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Right</value>
   </data>
-  <data name="&gt;&gt;tbMoney.Name" xml:space="preserve">
-    <value>tbMoney</value>
+  <data name="&gt;&gt;tbSumFuel.Name" xml:space="preserve">
+    <value>tbSumFuel</value>
   </data>
-  <data name="&gt;&gt;tbMoney.Type" xml:space="preserve">
+  <data name="&gt;&gt;tbSumFuel.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tbMoney.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tbSumFuel.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="&gt;&gt;tbMoney.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tbSumFuel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="tbLitr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 31</value>
+    <value>120, 32</value>
   </data>
   <data name="tbLitr.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 20</value>
   </data>
   <data name="tbLitr.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="tbLitr.Text" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="tbLitr.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Right</value>
@@ -940,58 +922,58 @@
   <data name="&gt;&gt;tbLitr.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="radioButton2.AutoSize" type="System.Boolean, mscorlib">
+  <data name="rbSumFuel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="radioButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 76</value>
+  <data name="rbSumFuel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 75</value>
   </data>
-  <data name="radioButton2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="rbSumFuel.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 17</value>
   </data>
-  <data name="radioButton2.TabIndex" type="System.Int32, mscorlib">
+  <data name="rbSumFuel.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="radioButton2.Text" xml:space="preserve">
+  <data name="rbSumFuel.Text" xml:space="preserve">
     <value>Сумма</value>
   </data>
-  <data name="&gt;&gt;radioButton2.Name" xml:space="preserve">
-    <value>radioButton2</value>
+  <data name="&gt;&gt;rbSumFuel.Name" xml:space="preserve">
+    <value>rbSumFuel</value>
   </data>
-  <data name="&gt;&gt;radioButton2.Type" xml:space="preserve">
+  <data name="&gt;&gt;rbSumFuel.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;radioButton2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;rbSumFuel.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="&gt;&gt;radioButton2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;rbSumFuel.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="radioButton1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="rbLitrFuel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="radioButton1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="rbLitrFuel.Location" type="System.Drawing.Point, System.Drawing">
     <value>21, 32</value>
   </data>
-  <data name="radioButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 17</value>
+  <data name="rbLitrFuel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 17</value>
   </data>
-  <data name="radioButton1.TabIndex" type="System.Int32, mscorlib">
+  <data name="rbLitrFuel.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="radioButton1.Text" xml:space="preserve">
-    <value>Количество</value>
+  <data name="rbLitrFuel.Text" xml:space="preserve">
+    <value>Литры</value>
   </data>
-  <data name="&gt;&gt;radioButton1.Name" xml:space="preserve">
-    <value>radioButton1</value>
+  <data name="&gt;&gt;rbLitrFuel.Name" xml:space="preserve">
+    <value>rbLitrFuel</value>
   </data>
-  <data name="&gt;&gt;radioButton1.Type" xml:space="preserve">
+  <data name="&gt;&gt;rbLitrFuel.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;radioButton1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;rbLitrFuel.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="&gt;&gt;radioButton1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;rbLitrFuel.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
@@ -1133,7 +1115,7 @@
     <value>273, 354</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>100</value>
+    <value>0</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Топливо</value>
@@ -1149,6 +1131,39 @@
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="tbTotalFuel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tbTotalFuel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 27.75pt, style=Bold</value>
+  </data>
+  <data name="tbTotalFuel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="tbTotalFuel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 49</value>
+  </data>
+  <data name="tbTotalFuel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tbTotalFuel.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tbTotalFuel.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;tbTotalFuel.Name" xml:space="preserve">
+    <value>tbTotalFuel</value>
+  </data>
+  <data name="&gt;&gt;tbTotalFuel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbTotalFuel.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;tbTotalFuel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 17</value>
@@ -1421,7 +1436,7 @@
     <value>100, 20</value>
   </data>
   <data name="tbHotDogPrice.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+    <value>111</value>
   </data>
   <data name="tbHotDogPrice.Text" xml:space="preserve">
     <value>5000</value>
@@ -2167,6 +2182,72 @@
   <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 269</value>
+  </data>
+  <data name="groupBox6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="groupBox6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 72</value>
+  </data>
+  <data name="groupBox6.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;groupBox6.Name" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;groupBox6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox6.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>295, 27</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>477, 357</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Магазин</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="pictureBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -2496,59 +2577,68 @@
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="groupBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 269</value>
+  <data name="&gt;&gt;payment.Name" xml:space="preserve">
+    <value>payment</value>
   </data>
-  <data name="groupBox6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="&gt;&gt;payment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="groupBox6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="&gt;&gt;payment.Parent" xml:space="preserve">
+    <value>groupBox7</value>
   </data>
-  <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 72</value>
-  </data>
-  <data name="groupBox6.TabIndex" type="System.Int32, mscorlib">
-    <value>50</value>
-  </data>
-  <data name="&gt;&gt;groupBox6.Name" xml:space="preserve">
-    <value>groupBox6</value>
-  </data>
-  <data name="&gt;&gt;groupBox6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox6.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;groupBox6.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;payment.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="&gt;&gt;TotalShow.Name" xml:space="preserve">
+    <value>TotalShow</value>
+  </data>
+  <data name="&gt;&gt;TotalShow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TotalShow.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;TotalShow.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btTotal.Name" xml:space="preserve">
+    <value>btTotal</value>
+  </data>
+  <data name="&gt;&gt;btTotal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btTotal.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;btTotal.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBox7.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>295, 27</value>
+  <data name="groupBox7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 398</value>
   </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>477, 357</value>
+  <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>763, 100</value>
   </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>100</value>
+  <data name="groupBox7.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Магазин</value>
+  <data name="groupBox7.Text" xml:space="preserve">
+    <value>Оплата</value>
   </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="&gt;&gt;groupBox7.Name" xml:space="preserve">
+    <value>groupBox7</value>
   </data>
-  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;groupBox7.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;groupBox7.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;groupBox7.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="payment.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -2584,10 +2674,10 @@
     <value>Microsoft Sans Serif, 36pt, style=Bold</value>
   </data>
   <data name="TotalShow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>207, 26</value>
+    <value>180, 26</value>
   </data>
   <data name="TotalShow.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 62</value>
+    <value>268, 62</value>
   </data>
   <data name="TotalShow.TabIndex" type="System.Int32, mscorlib">
     <value>100</value>
@@ -2607,59 +2697,35 @@
   <data name="&gt;&gt;TotalShow.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="Total.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btTotal.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btTotal.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 21.75pt, style=Bold</value>
   </data>
-  <data name="Total.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btTotal.Location" type="System.Drawing.Point, System.Drawing">
     <value>22, 26</value>
   </data>
-  <data name="Total.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btTotal.Size" type="System.Drawing.Size, System.Drawing">
     <value>152, 62</value>
   </data>
-  <data name="Total.TabIndex" type="System.Int32, mscorlib">
+  <data name="btTotal.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
-  <data name="Total.Text" xml:space="preserve">
+  <data name="btTotal.Text" xml:space="preserve">
     <value>Итого</value>
   </data>
-  <data name="&gt;&gt;Total.Name" xml:space="preserve">
-    <value>Total</value>
+  <data name="&gt;&gt;btTotal.Name" xml:space="preserve">
+    <value>btTotal</value>
   </data>
-  <data name="&gt;&gt;Total.Type" xml:space="preserve">
+  <data name="&gt;&gt;btTotal.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Total.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btTotal.Parent" xml:space="preserve">
     <value>groupBox7</value>
   </data>
-  <data name="&gt;&gt;Total.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btTotal.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="groupBox7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="groupBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 398</value>
-  </data>
-  <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>763, 100</value>
-  </data>
-  <data name="groupBox7.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="groupBox7.Text" xml:space="preserve">
-    <value>Оплата</value>
-  </data>
-  <data name="&gt;&gt;groupBox7.Name" xml:space="preserve">
-    <value>groupBox7</value>
-  </data>
-  <data name="&gt;&gt;groupBox7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox7.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox7.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

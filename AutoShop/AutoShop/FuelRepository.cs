@@ -12,10 +12,10 @@ namespace AutoShop
         {
             return new List<FuelInfo>()
             {
-                new FuelInfo(){Name="АИ-92", Price=11325},
-                new FuelInfo(){Name="АИ-95", Price=14445},
-                new FuelInfo(){Name="АИ-98", Price=15643},
-                new FuelInfo(){Name="Дизель",Price=15365}
+                new FuelInfo(){Name="АИ-92", Price=1132},
+                new FuelInfo(){Name="АИ-95", Price=1444},
+                new FuelInfo(){Name="АИ-98", Price=1564},
+                new FuelInfo(){Name="Дизель",Price=1536}
             };
         }
 
