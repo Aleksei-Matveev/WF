@@ -17,7 +17,8 @@ namespace AutoShop
         {
             InitializeComponent();
         }
-        private decimal sum = 0;
+        private decimal sumShop = 0;
+        private decimal sumFuel = 0;
         private void checkBox_Click(object sender, EventArgs e)
         {
             string product = ((CheckBox)sender).Tag.ToString();
@@ -31,9 +32,9 @@ namespace AutoShop
             else
             {
                 decimal price = Convert.ToDecimal(textboxPrice(product).Text);
-                sum -= array[textboxPieces(product)] * price;
+                sumShop -= array[textboxPieces(product)] * price;
                 array[textboxCurrentPieces] = 0;
-                tbTotalShop.Text = sum.ToString();
+                tbTotalShop.Text = sumShop.ToString();
                 textboxCurrentPieces.ReadOnly = true;
                 textboxCurrentPieces.Text = "";           
             }                 
@@ -43,31 +44,22 @@ namespace AutoShop
         {
             string product=((TextBox)sender).Tag.ToString();
             decimal price = Convert.ToDecimal(textboxPrice(product).Text);
-            decimal count=0; 
-            
+            int countProduct=0;             
             decimal cursum = 0;
 
-            if (decimal.TryParse(textboxPieces(product).Text, out count))
+            if (textboxPieces(product).Text != "")
             {
-                cursum = price * count;
-                if (array[textboxPieces(product)] > count)
+                if (int.TryParse(textboxPieces(product).Text, out countProduct) && countProduct <= 20)
                 {
-                    sum -= array[textboxPieces(product)]*price;
-                    sum += cursum;
-                    array[textboxPieces(product)] = count;
-                    tbTotalShop.Text = sum.ToString();
+                    cursum = price * countProduct;
+                    sumShop -= array[textboxPieces(product)] * price;
+                    array[textboxPieces(product)] = countProduct;
+                    sumShop += cursum;
+                    tbTotalShop.Text = sumShop.ToString();
                 }
                 else
-                {
-                    sum -= array[textboxPieces(product)] * price;
-                    array[textboxPieces(product)] = count;
-                    
-                    sum += cursum;
-                    tbTotalShop.Text = sum.ToString();
-                }
-                
-            }
-          
+                    MessageBox.Show("Ограничение товара 20 штук!", "ВНИМАНИЕ!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }          
         }
         private TextBox textboxPrice(string product)
         {
@@ -84,7 +76,6 @@ namespace AutoShop
                 default: return null;               
             }
         }
-
         private TextBox textboxPieces(string product)
         {
             switch (product)
@@ -100,7 +91,6 @@ namespace AutoShop
                 default: return null;
             }
         }
-
         private CheckBox checkbox(string product)
         {
             switch (product)
@@ -116,27 +106,27 @@ namespace AutoShop
                 default: return null;
             }
         }
-
         private void Total_Click(object sender, EventArgs e)
         {
             string button = ((Button)sender).Tag.ToString();
             switch (button)
             {
                 case "Total":
-                    if ((Convert.ToInt16(tbTotalShop.Text)) > 0)
+                    if ((Convert.ToDecimal(tbTotalShop.Text)) > 0)
                     {
-                      //sum+=sumFuel;
-                       // TotalShow.Text = sum.ToString();
-                        payment.Enabled=true;
+                        decimal sumTotal = sumShop + sumFuel;
+                        TotalShow.Text = sumTotal.ToString();
+                        payment.Enabled = true;
                     }
                     break;
+
                 case "Payment":
                     MessageBox.Show("Оплачено");
                     payment.Enabled = false;
                     tbTotalShop.Text = "0";
                     TotalShow.Text = "0";
                     tbTotalFuel.Text = "0";
-                    //sum = 0;
+                    sumShop = 0;
                     tbLitr.Text = "0";
                     chbHotDog.Checked = false;
                     chbHamburger.Checked = false;
@@ -148,8 +138,7 @@ namespace AutoShop
                     chbLatte.Checked = false;
                     break;
             }
-        }
-        
+        }        
         private void FormAutoShop_Load(object sender, EventArgs e)
         {
             cbFuels.DisplayMember = "Name";
@@ -176,10 +165,28 @@ namespace AutoShop
 
         private void textBox18_KeyUp(object sender, EventArgs e)
         {
-           //sumFuel= Convert.ToDecimal(tbPriceFuel.Text)*Convert.ToDecimal(tbLitr.Text);
-           // tbTotalFuel.Text = sumFuel.ToString();
+           sumFuel= Convert.ToDecimal(tbPriceFuel.Text)*Convert.ToDecimal(tbLitr.Text);
+           tbTotalFuel.Text = sumFuel.ToString();
         }
 
-       
+        private void авторToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormAuthor author= new FormAuthor();
+            author.ShowDialog();
+
+        }
+
+        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private void FormAutoShop_FormClosing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (DialogResult.No == MessageBox.Show("Хотите завершить работу?", "Выход", MessageBoxButtons.YesNo, MessageBoxIcon.Information))
+            {
+                e.Cancel = true;
+            }
+           
+        }
     }
 }
