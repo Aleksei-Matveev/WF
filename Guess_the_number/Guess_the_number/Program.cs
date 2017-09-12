@@ -13,10 +13,9 @@ namespace Lab_01
         {
             Resume resume = new Resume();
             resume.Run();
-            //Window window = new Window();
-            //window.Run();
-            //Game game = new Game();
-            //game.Run();
+           
+            Game game = new Game();
+            game.Run();
         }
             
     }

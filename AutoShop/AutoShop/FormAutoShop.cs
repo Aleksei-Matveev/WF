@@ -22,7 +22,7 @@ namespace AutoShop
         private decimal sumShop = 0;
         private decimal sumFuel = 0;
         private decimal sumTotal = 0;
-        private readonly string templateFileName = @".\template.docx";
+        private readonly string templateFileName = @"d:\template.docx";
         private void checkbox_CheckedChanged(object sender, EventArgs e)
         {
             string product = ((CheckBox)sender).Tag.ToString();
@@ -127,8 +127,8 @@ namespace AutoShop
                     break;
 
                 case "Payment":
-                    MessageBox.Show("Оплачено " + sumTotal.ToString());
-                    exportWord("Сумма к оплате :" + sumTotal.ToString());
+                    MessageBox.Show("Оплачено " + sumTotal.ToString(),"Оплата",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                   // exportWord("Сумма к оплате :" + sumTotal.ToString());
 
                     payment.Enabled = false;
                     tbTotalShop.Text = "0";
@@ -269,7 +269,7 @@ namespace AutoShop
             wordapp.Visible = false;
             var wordDocument = wordapp.Documents.Open(templateFileName);
             replace("{name}", text, wordDocument);
-            wordDocument.SaveAs2(@"result.docx");
+            wordDocument.SaveAs2(@"d:\result.docx");
             wordapp.Visible = true;
         }
 
