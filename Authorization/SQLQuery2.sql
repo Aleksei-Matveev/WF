@@ -1,0 +1,1 @@
+﻿SELECT COUNT(*) FROM USERS	WHERE name='Rewa' AND password='asd444'
