@@ -41,13 +41,22 @@ namespace Authorization
         }
         private void lLRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
             RegisterForm registerForm = new RegisterForm();
             registerForm.ShowDialog();
+            this.Show();
         }
         private void lLForgotPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
             ForgotForm forgotForm = new ForgotForm();
             forgotForm.ShowDialog();
+            this.Show();
+        }
+
+        private void AutorizForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

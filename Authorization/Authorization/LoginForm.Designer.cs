@@ -130,10 +130,10 @@
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(301, 417);
             this.Name = "AutorizForm";
-            this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Авторизазия в системе";
+            this.Load += new System.EventHandler(this.AutorizForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pBLogin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Net;
-using System.Net.Mail;
 using System.Windows.Forms;
 
 namespace Authorization
@@ -15,9 +13,15 @@ namespace Authorization
         private void btnOk_Click(object sender, EventArgs e)
         {
             SendMail sendMail = new SendMail();
-            string code=sendMail.Send();
-
-            this.Close();
+            string code = sendMail.Send(tbEmail.Text);
+            CheckCodeForm checkCodeForm = new CheckCodeForm();
+            if (checkCodeForm.ShowDialog() == DialogResult.OK)
+            {
+                if (code == checkCodeForm.Code)
+                {
+                    grBoxPass.Show();                   
+                }
+            }           
         }        
     }
 }

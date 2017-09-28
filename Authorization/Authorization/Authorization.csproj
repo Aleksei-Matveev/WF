@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>key.ico</ApplicationIcon>
+    <ApplicationIcon>Images\key.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckCodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckCodeForm.Designer.cs">
+      <DependentUpon>CheckCodeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ForgotForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,9 @@
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SendMail.cs" />
+    <EmbeddedResource Include="CheckCodeForm.resx">
+      <DependentUpon>CheckCodeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ForgotForm.resx">
       <DependentUpon>ForgotForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,7 +122,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Images\entry.png" />
-    <Content Include="key.ico" />
+    <Content Include="Images\key.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

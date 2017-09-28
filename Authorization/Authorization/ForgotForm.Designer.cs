@@ -30,23 +30,23 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ForgotForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tbConfirmPassword = new System.Windows.Forms.TextBox();
-            this.tbPassword = new System.Windows.Forms.TextBox();
-            this.tbEmail = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.grBoxPass = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.tbPassword = new System.Windows.Forms.TextBox();
+            this.tbConfirmPassword = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tbEmail = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnOk = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.grBoxPass.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.groupBox2);
+            this.groupBox1.Controls.Add(this.grBoxPass);
             this.groupBox1.Controls.Add(this.tbEmail);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -55,12 +55,28 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // tbConfirmPassword
+            // grBoxPass
             // 
-            this.tbConfirmPassword.Location = new System.Drawing.Point(0, 74);
-            this.tbConfirmPassword.Name = "tbConfirmPassword";
-            this.tbConfirmPassword.Size = new System.Drawing.Size(318, 20);
-            this.tbConfirmPassword.TabIndex = 5;
+            this.grBoxPass.Controls.Add(this.label2);
+            this.grBoxPass.Controls.Add(this.tbPassword);
+            this.grBoxPass.Controls.Add(this.tbConfirmPassword);
+            this.grBoxPass.Controls.Add(this.label3);
+            this.grBoxPass.Location = new System.Drawing.Point(6, 61);
+            this.grBoxPass.Name = "grBoxPass";
+            this.grBoxPass.Size = new System.Drawing.Size(324, 100);
+            this.grBoxPass.TabIndex = 6;
+            this.grBoxPass.TabStop = false;
+            this.grBoxPass.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(113, 16);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Новый пароль";
             // 
             // tbPassword
             // 
@@ -69,12 +85,12 @@
             this.tbPassword.Size = new System.Drawing.Size(318, 20);
             this.tbPassword.TabIndex = 4;
             // 
-            // tbEmail
+            // tbConfirmPassword
             // 
-            this.tbEmail.Location = new System.Drawing.Point(6, 35);
-            this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(318, 20);
-            this.tbEmail.TabIndex = 3;
+            this.tbConfirmPassword.Location = new System.Drawing.Point(0, 74);
+            this.tbConfirmPassword.Name = "tbConfirmPassword";
+            this.tbConfirmPassword.Size = new System.Drawing.Size(318, 20);
+            this.tbConfirmPassword.TabIndex = 5;
             // 
             // label3
             // 
@@ -86,15 +102,13 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Повторите новый пароль";
             // 
-            // label2
+            // tbEmail
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Новый пароль";
+            this.tbEmail.Location = new System.Drawing.Point(6, 35);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(318, 20);
+            this.tbEmail.TabIndex = 3;
+            this.tbEmail.Text = "matveevalex1512@gmail.com";
             // 
             // label1
             // 
@@ -125,19 +139,6 @@
             this.btnOk.UseVisualStyleBackColor = true;
             this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.tbPassword);
-            this.groupBox2.Controls.Add(this.tbConfirmPassword);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(6, 61);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(324, 100);
-            this.groupBox2.TabIndex = 6;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Visible = false;
-            // 
             // ForgotForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -158,8 +159,8 @@
             this.Text = "Восстановление пароля";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.grBoxPass.ResumeLayout(false);
+            this.grBoxPass.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -175,6 +176,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnOk;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox grBoxPass;
     }
 }
