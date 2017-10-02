@@ -1,14 +1,13 @@
 ﻿using System;
-using System.Configuration;
+using System.Drawing;
+using System.Threading;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-using System.Data;
 
 namespace Authorization
 {
     public partial class AutorizForm : Form
     {
-        private SqlConnection sqlConnection;
+        
         public AutorizForm()
         {
             InitializeComponent();
@@ -22,24 +21,28 @@ namespace Authorization
         private void OnDeFocus(object sender, EventArgs e)
         {
         
-        }  
-        private void PBLogin_Click(object sender, System.EventArgs e)
-        {
-            sqlConnection = new SqlConnection();
-            sqlConnection.ConnectionString= ConfigurationManager.ConnectionStrings["Registration"].ConnectionString;
-            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("SELECT COUNT(*) FROM USERS	WHERE name='"+tbLogin.Text+"' AND password='"+tbPassword.Text+"'", sqlConnection);
-            DataTable dataTable = new DataTable();
-            sqlDataAdapter.Fill(dataTable);
-            if(dataTable.Rows[0][0].ToString()=="1")
+        }
+        
+
+        private void PBLogin_Click(object sender, System.EventArgs e)        {
+
+            timer1.Enabled = true;
+            Query query = new Query();
+            progressBar.Visible = true;
+            progressBar.Maximum = 10;
+            progressBar.Step = 1;
+           
+           
+            if(query.Check(tbLogin.Text, tbPassword.Text))
             {
                 this.Hide();
                 MainForm mainForm = new MainForm();
                 mainForm.ShowDialog();
                 this.Close();
             }
-            MessageBox.Show("Ошибка");
+            //tbError.Visible = true;
         }
-        private void lLRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void LLRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
             RegisterForm registerForm = new RegisterForm();
@@ -54,9 +57,21 @@ namespace Authorization
             this.Show();
         }
 
-        private void AutorizForm_Load(object sender, EventArgs e)
-        {
+     
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {           
+            progressBar.Increment(+1);
+            Graphics text = progressBar.CreateGraphics();
+            text.DrawString("Идет проверка ....", new Font("Microsoft Sans Serif", 11, FontStyle.Regular), new SolidBrush(Color.DarkGreen), 95, 1);
+            text.Dispose();
+            if (progressBar.Value == 9)
+            {
+               
+                timer1.Enabled = false;
+                progressBar.Increment(+1);
+               
+            }
         }
     }
 }

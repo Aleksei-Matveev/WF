@@ -26,41 +26,44 @@
         /// Требуемый метод для поддержки конструктора — не изменяйте 
         /// содержимое этого метода с помощью редактора кода.
         /// </summary>
+        /// 
+
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AutorizForm));
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.tbLogin = new System.Windows.Forms.TextBox();
             this.lLForgotPassword = new System.Windows.Forms.LinkLabel();
             this.lLRegister = new System.Windows.Forms.LinkLabel();
             this.pBLogin = new System.Windows.Forms.PictureBox();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.tbError = new System.Windows.Forms.TextBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pBLogin)).BeginInit();
             this.SuspendLayout();
             // 
             // tbPassword
             // 
             this.tbPassword.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.tbPassword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tbPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbPassword.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.tbPassword.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.tbPassword.Location = new System.Drawing.Point(64, 200);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(166, 20);
             this.tbPassword.TabIndex = 1;
-            this.tbPassword.Text = "Пароль";
             // 
             // tbLogin
             // 
             this.tbLogin.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.tbLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tbLogin.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbLogin.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.tbLogin.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.tbLogin.Location = new System.Drawing.Point(64, 174);
             this.tbLogin.Name = "tbLogin";
             this.tbLogin.Size = new System.Drawing.Size(166, 20);
             this.tbLogin.TabIndex = 0;
-            this.tbLogin.Text = "Имя пользователя";
             // 
             // lLForgotPassword
             // 
@@ -86,7 +89,7 @@
             this.lLRegister.TabIndex = 3;
             this.lLRegister.TabStop = true;
             this.lLRegister.Text = "Регистрация";
-            this.lLRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lLRegister_LinkClicked);
+            this.lLRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LLRegister_LinkClicked);
             // 
             // pBLogin
             // 
@@ -99,16 +102,34 @@
             this.pBLogin.Size = new System.Drawing.Size(149, 57);
             this.pBLogin.TabIndex = 4;
             this.pBLogin.TabStop = false;
-            this.pBLogin.Visible = false;
             this.pBLogin.Click += new System.EventHandler(this.PBLogin_Click);
             // 
-            // progressBar1
+            // progressBar
             // 
-            this.progressBar1.Location = new System.Drawing.Point(12, 303);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(261, 23);
-            this.progressBar1.TabIndex = 5;
-            this.progressBar1.Visible = false;
+            this.progressBar.Location = new System.Drawing.Point(12, 303);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(261, 21);
+            this.progressBar.TabIndex = 5;
+            this.progressBar.Visible = false;
+            // 
+            // tbError
+            // 
+            this.tbError.BackColor = System.Drawing.Color.DarkSalmon;
+            this.tbError.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tbError.ForeColor = System.Drawing.Color.Maroon;
+            this.tbError.Location = new System.Drawing.Point(12, 303);
+            this.tbError.MinimumSize = new System.Drawing.Size(261, 22);
+            this.tbError.Name = "tbError";
+            this.tbError.ReadOnly = true;
+            this.tbError.Size = new System.Drawing.Size(261, 22);
+            this.tbError.TabIndex = 6;
+            this.tbError.Text = "Проверьте введенные данные";
+            this.tbError.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbError.Visible = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // AutorizForm
             // 
@@ -118,7 +139,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(285, 378);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.tbError);
+            this.Controls.Add(this.progressBar);
             this.Controls.Add(this.pBLogin);
             this.Controls.Add(this.lLRegister);
             this.Controls.Add(this.lLForgotPassword);
@@ -132,8 +154,7 @@
             this.Name = "AutorizForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Авторизазия в системе";
-            this.Load += new System.EventHandler(this.AutorizForm_Load);
+            this.Text = "Авторизация в системе";
             ((System.ComponentModel.ISupportInitialize)(this.pBLogin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -147,7 +168,9 @@
         private System.Windows.Forms.LinkLabel lLForgotPassword;
         private System.Windows.Forms.LinkLabel lLRegister;
         private System.Windows.Forms.PictureBox pBLogin;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar progressBar;
+        private System.Windows.Forms.TextBox tbError;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
