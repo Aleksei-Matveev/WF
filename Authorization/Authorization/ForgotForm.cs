@@ -5,23 +5,28 @@ namespace Authorization
 {
     public partial class ForgotForm : Form
     {
+        private bool isCheck;
         public ForgotForm()
         {
             InitializeComponent();
+            isCheck = false;
         }
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            SendMail sendMail = new SendMail();
-            string code = sendMail.Send(tbEmail.Text);
-            CheckCodeForm checkCodeForm = new CheckCodeForm();
-            if (checkCodeForm.ShowDialog() == DialogResult.OK)
+            if (isCheck)
             {
-                if (code == checkCodeForm.Code)
+                SendMail sendMail = new SendMail();
+                string code = sendMail.Send(tbEmail.Text);
+                CheckCodeForm checkCodeForm = new CheckCodeForm();
+                if (checkCodeForm.ShowDialog() == DialogResult.OK)
                 {
-                    grBoxPass.Show();                   
+                    if (code == checkCodeForm.Code)
+                    {
+                        grBoxPass.Show();
+                    }
                 }
-            }           
+            }
         }        
     }
 }

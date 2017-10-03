@@ -76,6 +76,7 @@
             this.MinimumSize = new System.Drawing.Size(470, 130);
             this.Name = "CheckCodeForm";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Проверка почты";
             this.ResumeLayout(false);
             this.PerformLayout();
