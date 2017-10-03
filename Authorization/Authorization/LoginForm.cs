@@ -27,13 +27,13 @@ namespace Authorization
         private void PBLogin_Click(object sender, System.EventArgs e)        {
 
             timer1.Enabled = true;
-            Query query = new Query();
+           
             progressBar.Visible = true;
             progressBar.Maximum = 10;
             progressBar.Step = 1;
            
            
-            if(query.Check(tbLogin.Text, tbPassword.Text))
+            if(Query.Check(tbLogin.Text, tbPassword.Text))
             {
                 this.Hide();
                 MainForm mainForm = new MainForm();
