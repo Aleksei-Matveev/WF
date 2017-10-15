@@ -1,1 +1,0 @@
-﻿UPDATE dbo.Users SET Password='000000' WHERE id=1

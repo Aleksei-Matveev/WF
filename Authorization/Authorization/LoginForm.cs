@@ -11,18 +11,8 @@ namespace Authorization
         public AutorizForm()
         {
             InitializeComponent();
-            this.tbLogin.GotFocus += OnFocus;
-            this.tbLogin.LostFocus += OnDeFocus;
+           
         }
-        private void OnFocus(object sender, EventArgs e)
-        {
-            
-        }
-        private void OnDeFocus(object sender, EventArgs e)
-        {
-        
-        }
-        
 
         private void PBLogin_Click(object sender, System.EventArgs e)        {
 
@@ -40,7 +30,7 @@ namespace Authorization
                 mainForm.ShowDialog();
                 this.Close();
             }
-            //tbError.Visible = true;
+            tbError.Visible = true;
         }
         private void LLRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {

@@ -1,1 +1,0 @@
-﻿UPDATE dbo.Users SET Password='123456' WHERE id=(SELECT id FROM dbo.Users WHERE Email='Sun@mail.by')

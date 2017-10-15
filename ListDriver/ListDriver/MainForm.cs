@@ -19,11 +19,15 @@ namespace ListDriver
 
         private void exitMenuItem_Click(object sender, EventArgs e)
         {
+            driverBindingSource.EndEdit();
+            driverTableAdapter.Update(this.driverDataSet.Driver);
             this.Close();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "driverDataSet.Driver". При необходимости она может быть перемещена или удалена.
+            this.driverTableAdapter.Fill(this.driverDataSet.Driver);
             clockStatusLabel.Text = DateTime.Now.ToShortDateString().ToString(); 
         }
 
@@ -50,6 +54,23 @@ namespace ListDriver
         {
             this.Visible = true;
             notifyIcon.Visible = false;
+        }
+
+        private void deleteToolStripMenuItemDataGrid_Click(object sender, EventArgs e)
+        {
+            driverBindingSource.RemoveCurrent();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            driverBindingSource.EndEdit();
+            driverTableAdapter.Update(this.driverDataSet.Driver);
+
+        }
+
+        private void editToolStripMenuItemDataGrid_Click(object sender, EventArgs e)
+        {
+          
         }
     }
 }
