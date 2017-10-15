@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListDriver", "ListDriver\ListDriver.csproj", "{B938E69A-02B4-43EF-B962-FEF360AB9406}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B938E69A-02B4-43EF-B962-FEF360AB9406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B938E69A-02B4-43EF-B962-FEF360AB9406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B938E69A-02B4-43EF-B962-FEF360AB9406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B938E69A-02B4-43EF-B962-FEF360AB9406}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F22350EE-F0B1-4349-A548-C22F1D139231}
+	EndGlobalSection
+EndGlobal
