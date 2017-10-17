@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace Login
@@ -8,6 +9,7 @@ namespace Login
         string Login { get; }
         string Password { get; }
         void Hide();
+     
 
         event EventHandler EntryClick;
     }

@@ -18,7 +18,7 @@ namespace Login
 
             LoginForm loginForm = new LoginForm();
             MessageService messageService = new MessageService();
-            WorkDatabase database = new WorkDatabase();
+            WorkDatabase database = new WorkDatabase(messageService);
 
             LoginPresenter presenter = new LoginPresenter(loginForm, database, messageService);
 
