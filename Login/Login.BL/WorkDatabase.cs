@@ -9,7 +9,8 @@ namespace Login.BL
     {
         void AddUser(User user);
         void UpdatePassowd(User user);
-        bool IsExist(User user);
+        bool IsExistUser(User user);
+        bool IsExisEmail(string email);
     }
     public class WorkDatabase : IWorkDatabase
     {
@@ -31,7 +32,7 @@ namespace Login.BL
         {
             connection.Close();
         }
-        public bool IsExist(User user)
+        public bool IsExistUser(User user)
         {
             OpenConnection();
             string query = "SELECT COUNT(*) FROM USERS   WHERE name = '" + user.Login + "' AND password = '" + user.Password + "'";
@@ -73,6 +74,11 @@ namespace Login.BL
             {
                 command.ExecuteNonQuery();
             }
+        }
+
+        public bool IsExisEmail(string email)
+        {
+            throw new NotImplementedException();
         }
     }
 }
