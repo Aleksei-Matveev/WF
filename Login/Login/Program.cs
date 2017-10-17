@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Login.BL;
+using Login.Presenter;
 
 namespace Login
 {
@@ -16,7 +15,14 @@ namespace Login
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+
+            LoginForm loginForm = new LoginForm();
+            MessageService messageService = new MessageService();
+            WorkDatabase database = new WorkDatabase();
+
+            LoginPresenter presenter = new LoginPresenter(loginForm, database, messageService);
+
+            Application.Run(loginForm);
         }
     }
 }
