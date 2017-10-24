@@ -104,6 +104,7 @@
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(279, 389);
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Авторизация";
             this.ResumeLayout(false);
             this.PerformLayout();
