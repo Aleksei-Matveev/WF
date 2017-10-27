@@ -1,17 +1,12 @@
-﻿using Login.BL.Entity;
-using System;
+﻿using System;
 using System.Configuration;
 using System.Data.SqlClient;
+using Login.BL.Entity;
+using Login.BL.Interface;
 
-namespace Login.BL
-{
-    public interface IWorkDatabase
-    {
-        void AddUser(User user);
-        void UpdatePassowd(User user);
-        bool IsExistUser(User user);
-        bool IsExisEmail(string email);
-    }
+
+namespace Login.BL{
+ 
     public class WorkDatabase : IWorkDatabase
     {
         private SqlConnection connection=null;

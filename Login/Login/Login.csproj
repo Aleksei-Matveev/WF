@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Presenter\LoginPresenter.cs" />
+    <Compile Include="Interface\ILoginForm.cs" />
     <Compile Include="View\ForgotForm.cs">
       <SubType>Form</SubType>
     </Compile>

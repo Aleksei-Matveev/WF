@@ -1,6 +1,7 @@
 ﻿using System;
-using Login.BL;
 using Login.BL.Entity;
+using Login.BL.Interface;
+using Login.Interface;
 
 namespace Login.Presenter
 {
@@ -18,7 +19,10 @@ namespace Login.Presenter
             _messageService = messageService;
 
             view.EntryClick += new System.EventHandler(_view_EntryClick);
+            
         }
+
+       
 
         private void _view_EntryClick(object sender, EventArgs e)
         {

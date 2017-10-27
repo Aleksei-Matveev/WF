@@ -1,14 +1,8 @@
-﻿using System.Windows.Forms;
+﻿using Login.BL.Interface;
+using System.Windows.Forms;
 
 namespace Login.BL
-{
-    public interface IMessageService
-    {
-        void ShowMessage(string message);
-        void ShowExclamation(string message);
-        void ShowError(string message);
-       
-    }
+{   
     public class MessageService : IMessageService
     {
         public void ShowError(string error)
