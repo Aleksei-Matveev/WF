@@ -24,7 +24,7 @@ namespace Login.BL
         {
             connection = new SqlConnection
             {
-                ConnectionString = ConfigurationManager.ConnectionStrings["Registration"].ConnectionString
+                ConnectionString = ConfigurationManager.ConnectionStrings["laptop"].ConnectionString
             };
             connection.Open();
         }

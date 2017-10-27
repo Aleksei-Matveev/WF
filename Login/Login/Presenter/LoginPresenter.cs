@@ -27,7 +27,7 @@ namespace Login.Presenter
                 Login = _view.Login,
                 Password = _view.Password
             };
-            if (!_database.IsExist(user))
+            if (!_database.IsExistUser(user))
                 _messageService.ShowError("Нет такого пользователя");
             else
             {
