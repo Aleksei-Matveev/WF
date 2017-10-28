@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Windows.Forms;
 using Login.BL;
+using Login.BL.Services;
 using Login.Presenter;
+using Login.View;
+
 
 namespace Login
 {
@@ -17,12 +20,18 @@ namespace Login
             Application.SetCompatibleTextRenderingDefault(false);
 
             LoginForm loginForm = new LoginForm();
+            MainForm mainForm = new MainForm();
+            RegisterForm registerForm = new RegisterForm();
+            ForgotForm forgotForm = new ForgotForm();
+            
             MessageService messageService = new MessageService();
-            WorkDatabase database = new WorkDatabase(messageService);
+            UserRepository database = new UserRepository(messageService);
 
-            LoginPresenter presenter = new LoginPresenter(loginForm, database, messageService);
+            AppPresenter presenter = new AppPresenter(loginForm, registerForm, forgotForm, mainForm ,database, messageService);
 
             Application.Run(loginForm);
+
+            
         }
     }
 }

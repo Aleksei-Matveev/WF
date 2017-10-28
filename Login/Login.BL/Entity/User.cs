@@ -1,8 +1,6 @@
-﻿using Login.BL.Interface;
-namespace Login.BL.Entity
+﻿namespace Login.BL.Entity
 {
-
-    public class User : IUser
+    public class User
     {
         public string Login { get; set; }
         public string Password { get; set; }

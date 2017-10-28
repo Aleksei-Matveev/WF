@@ -2,7 +2,8 @@
 using System.Windows.Forms;
 using Login.Interface;
 
-namespace Login
+
+namespace Login.View
 {   
     public partial class LoginForm : Form, ILoginForm
     {

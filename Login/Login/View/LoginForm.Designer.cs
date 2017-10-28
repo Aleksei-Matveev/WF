@@ -1,4 +1,4 @@
-﻿namespace Login
+﻿namespace Login.View
 {
     partial class LoginForm
     {

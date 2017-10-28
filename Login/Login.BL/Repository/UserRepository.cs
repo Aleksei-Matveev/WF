@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
 using Login.BL.Entity;
@@ -7,15 +8,15 @@ using Login.BL.Interface;
 
 namespace Login.BL{
  
-    public class WorkDatabase : IWorkDatabase
+    public class UserRepository : IUserRepository
     {
         private SqlConnection connection=null;
         private readonly IMessageService _messageService;
-        public WorkDatabase(IMessageService messageService)
+        public UserRepository(IMessageService messageService)
         {
             _messageService = messageService;
         }
-        public void OpenConnection()
+        private void OpenConnection()
         {
             connection = new SqlConnection
             {
@@ -23,7 +24,7 @@ namespace Login.BL{
             };
             connection.Open();
         }
-        public void CloseConnection()
+        private void CloseConnection()
         {
             connection.Close();
         }
@@ -72,6 +73,11 @@ namespace Login.BL{
         }
 
         public bool IsExisEmail(string email)
+        {
+            throw new NotImplementedException();
+        }      
+
+        public User GetUser(int id)
         {
             throw new NotImplementedException();
         }

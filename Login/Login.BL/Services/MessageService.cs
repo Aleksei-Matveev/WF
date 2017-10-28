@@ -1,7 +1,7 @@
 ﻿using Login.BL.Interface;
 using System.Windows.Forms;
 
-namespace Login.BL
+namespace Login.BL.Services
 {   
     public class MessageService : IMessageService
     {
